@@ -14,15 +14,25 @@
   font-family: 'Noto Serif', serif;
 }
 
+.basic-btn {
+  padding: 19px 80px;
+  background-color: #e95a08;
+  color: white;
+  font-size: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.basic-btn:hover {
+  background-color: #d44d00;
+}
+
 body {
   font-family: 'Inter', sans-serif;
 }
 
 /* Navbar Style */
-
-header {
-  min-height: 100vh;
-}
 
 nav {
   margin: 20px 150px;
@@ -161,11 +171,102 @@ nav li a:hover {
     margin: 0 50px;
   }
 
-  .banner-img{
+  .banner-img {
     width: 100%;
   }
 
-    .banner-img img {
+  .banner-img img {
     width: 100%;
   }
 }
+
+/* Plants section style */
+
+.plants-sec {
+  margin: 120px 150px 200px 150px;
+}
+
+.plants-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.plants-txt h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.plants-txt span {
+  color: #e95a08;
+}
+
+.plants-txt p {
+  font-size: 1.4rem;
+  opacity: 0.5;
+}
+
+.all-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+}
+
+.box {
+  text-align: center;
+}
+
+.box img {
+  margin-bottom: 30px;
+}
+
+.box h3 {
+  font-size: 1.4rem;
+  color: #111111;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.box h4 {
+  font-size: 1.4rem;
+  color: #111111;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Responsive plants section */
+
+@media screen and (max-width: 576px) {
+  .plants-sec {
+    margin: 65px 30px 40px 30px;
+  }
+
+  .all-boxes {
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 10px;
+  }
+
+  .box img {
+    width: 100%;
+  }
+
+  .basic-btn {
+    padding: 19px 30px;
+  }
+
+  .box h3,
+  .box h4 {
+    font-size: 1rem;
+  }
+
+  .plants-txt h2 {
+    font-size: 1.5rem;
+  }
+
+  .plants-txt p {
+    font-size: 14px;
+  }
+}
+
