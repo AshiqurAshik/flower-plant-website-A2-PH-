@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Shared class */
+
+.inter-font{
+  font-family: 'Inter', sans-serif;
+}
+
+.noto-font{
+  font-family: 'Noto Serif', serif;
+}
+
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navbar Style */
+
+header{
+  max-height: 100vh;
+}
+
+nav{
+  margin: 20px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items{
+  display: flex;
+  align-items: center;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+nav li a{
+  text-decoration: none;
+  color: #8987A1;
+  font-weight: bold;
+  transition: color 0.4s;
+}
+
+nav li a:hover{
+  color: #252432;
+}
+
+.cart-icon{
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+  gap: 2px;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+
+@media screen and (max-width: 576px){
+  
+  nav{
+    margin: 30px;
+  }
+  
+  nav ul li{
+    display: none;
+  }
+
+  .cart-icon{
+
+  margin-left: 0;
+}
+
+.logo img{
+  width: 80px;
+  height: 38px;
+}
+}
+
+@media screen and (min-width: 576px) and (max-width:768px)
+{
+    nav{
+    margin: 20px 100px;
+  }
+
+  .logo img{
+  width: 75px;
+  
+}
+}
+
