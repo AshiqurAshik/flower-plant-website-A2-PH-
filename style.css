@@ -388,11 +388,13 @@ nav li a:hover {
   border-radius: 14px;
 }
 
-.bloom-plant a,
-.ana-plant a,
-.zabo-plant a {
+.bloom-plant p,
+.ana-plant p,
+.zabo-plant p {
   color: white;
   font-weight: 600;
+
+  border-bottom: 2px solid white;
 }
 
 .bloom-plant h2,
@@ -525,12 +527,74 @@ nav li a:hover {
   }
 
   .join-sec input {
-    width: 80%;
+    width: 100%;
   }
 
   .join-sec button {
     text-align: center;
     font-size: 14px;
     padding: 10px;
+  }
+}
+
+/* Footer scetion */
+
+.footer-sec {
+  margin: 50px 160px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo-txt {
+  margin-bottom: 16px;
+  width: 30%;
+}
+
+.logo-txt p {
+  opacity: 0.5;
+  font-size: 1.4rem;
+}
+
+.all-nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-sec ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-sec li a {
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+.footer-sec li a:hover{
+  color: black;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+}
+
+/* Respomsive footer */
+
+@media screen and (max-width: 576px){
+  .footer-sec{
+    margin: 50px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo-txt {
+    width: 100%;
+    font-size: 1rem;
   }
 }
