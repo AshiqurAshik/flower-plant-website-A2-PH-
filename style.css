@@ -257,6 +257,7 @@ nav li a:hover {
 
   .basic-btn {
     padding: 19px 30px;
+    font-size: 10px;
   }
 
   .box h3,
@@ -440,7 +441,7 @@ nav li a:hover {
     margin: -60px 30px 40px 30px;
   }
 
-  .latest-deal-txt{
+  .latest-deal-txt {
     margin-bottom: 50px;
   }
 
@@ -458,7 +459,7 @@ nav li a:hover {
     padding: 60px 30px;
   }
 
-  .bloom-plant h2{
+  .bloom-plant h2 {
     font-size: 1.12rem;
   }
 
@@ -468,5 +469,68 @@ nav li a:hover {
 
   .zabo-plant a {
     font-size: 1rem;
+  }
+}
+
+/* Join section */
+
+.join-sec {
+  padding: 195px 305px;
+  background-image: url(./assets/news-letter-bg.png);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.join-sec h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.input-email {
+  display: flex;
+  align-items: center;
+}
+
+.join-sec input {
+  width: 600px;
+  height: 50px;
+
+  outline: 0;
+  padding-left: 20px;
+  border: none;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+.join-sec button {
+  height: 50px;
+  font-size: 1rem;
+}
+
+/* Responsive Join section */
+
+@media screen and (max-width: 576px) {
+  .join-sec {
+    padding: 100px 20px;
+  }
+  .join-sec h1 {
+    font-size: 1.2rem;
+  }
+
+  .join-sec input {
+    width: 80%;
+  }
+
+  .join-sec button {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
   }
 }
