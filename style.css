@@ -405,7 +405,7 @@ nav li a:hover {
 .zabo-plant p {
   color: white;
   font-weight: 600;
-
+  cursor: pointer;
   border-bottom: 2px solid white;
 }
 
@@ -591,9 +591,15 @@ nav li a:hover {
 
 .social-links {
   display: flex;
+  align-items: flex-start;
+  
+  cursor: pointer;
+}
+
+.links{
+  display: flex;
   align-items: center;
   gap: 24px;
-  cursor: pointer;
 }
 
 /* Respomsive footer */
