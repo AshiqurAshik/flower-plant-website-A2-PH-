@@ -42,7 +42,7 @@
 
           <div class="cart-icon">
             <i class="fa-solid fa-cart-shopping"></i>
-            <p>Cart ($56)</p>
+            <p id="cart-btn" onclick="alertMsg()">Cart ($56)</p>
           </div>
         </div>
       </nav>
@@ -245,4 +245,14 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    let cart = document.getElementById("#cart-btn");
+
+    function alertMsg()
+    {
+      alert("Flower Added to Cart")
+    }
+  </script>
+
 </html>

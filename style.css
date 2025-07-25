@@ -312,11 +312,23 @@ nav li a:hover {
   position: absolute;
   margin-left: 380px;
   margin-bottom: 500px;
+
+  animation: rotate 5s linear infinite;
 }
 
 .badge-img img {
   width: 286px;
   height: 284px;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
 }
 
 /* Responsive plant lover section */
